@@ -34,15 +34,13 @@ namespace LendingClubDotNet.Client
 		public static TResponse ExecutePostRequest<TRequest, TResponse>(TRequest requestValue, string url, string authorizationToken)
 		{
 			HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(url);
+			webRequest.Method = WebRequestMethods.Http.Post;
 
-			webRequest.Method = "POST";
-
-			webRequest.ContentType = "application/x-www-form-urlencoded";
 			webRequest.Accept = "application/json";
-
+			webRequest.ContentType = "application/json";
 			webRequest.Headers.Add("Authorization", authorizationToken);
 
-			string jsonData = JsonConvert.ToString(requestValue);
+			string jsonData = JsonConvert.SerializeObject(requestValue);
 			using (Stream s = webRequest.GetRequestStream())
 			{
 				using (StreamWriter sw = new StreamWriter(s))

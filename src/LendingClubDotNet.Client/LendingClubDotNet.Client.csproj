@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RequestUtility.cs" />
+    <Compile Include="v1\Areas\AccountResource.cs" />
+    <Compile Include="v1\Areas\LoanResource.cs" />
     <Compile Include="v1\LendingClubV1Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
