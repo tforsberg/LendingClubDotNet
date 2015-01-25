@@ -30,5 +30,37 @@ namespace LendingClubDotNet.Client
 
 			return JsonConvert.DeserializeObject<TResponse>(jsonResponse);
 		}
+
+		public static TResponse ExecutePostRequest<TRequest, TResponse>(TRequest requestValue, string url, string authorizationToken)
+		{
+			HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(url);
+
+			webRequest.Method = "POST";
+
+			webRequest.ContentType = "application/x-www-form-urlencoded";
+			webRequest.Accept = "application/json";
+
+			webRequest.Headers.Add("Authorization", authorizationToken);
+
+			string jsonData = JsonConvert.ToString(requestValue);
+			using (Stream s = webRequest.GetRequestStream())
+			{
+				using (StreamWriter sw = new StreamWriter(s))
+					sw.Write(jsonData);
+			}
+
+			string jsonResponse;
+			using (WebResponse webResponse = webRequest.GetResponse())
+			using (Stream str = webResponse.GetResponseStream())
+			{
+				if (str == null)
+					throw new InvalidOperationException("ResponseStream was null.");
+
+				using (StreamReader sr = new StreamReader(str))
+					jsonResponse = sr.ReadToEnd();
+			}
+
+			return JsonConvert.DeserializeObject<TResponse>(jsonResponse);
+		}
 	}
 }

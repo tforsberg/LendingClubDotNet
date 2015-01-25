@@ -44,7 +44,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\CreatePortfolioRequest.cs" />
     <Compile Include="Responses\AvailableCashResponse.cs" />
+    <Compile Include="Responses\CreatePortfolioResponse.cs" />
+    <Compile Include="Responses\DetailedNotesOwnedResponse.cs" />
+    <Compile Include="Responses\NotesOwnedResponse.cs" />
+    <Compile Include="Responses\PortfoliosOwnedResponse.cs" />
+    <Compile Include="Responses\SummaryResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
