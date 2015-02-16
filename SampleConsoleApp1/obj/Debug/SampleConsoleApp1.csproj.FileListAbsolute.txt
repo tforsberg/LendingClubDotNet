@@ -1,0 +1,12 @@
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\bin\Debug\SampleConsoleApp1.exe.config
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\obj\Debug\SampleConsoleApp1.csprojResolveAssemblyReference.cache
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\bin\Debug\SampleConsoleApp1.exe
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\bin\Debug\SampleConsoleApp1.pdb
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\bin\Debug\LendingClubDotNet.Client.dll
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\bin\Debug\LendingClubDotNet.Models.dll
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\bin\Debug\LendingClubDotNet.Client.pdb
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\bin\Debug\LendingClubDotNet.Models.pdb
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\obj\Debug\SampleConsoleApp1.exe
+S:\GitHub\tforsberg\Forks\LendingClubDotNet\SampleConsoleApp1\obj\Debug\SampleConsoleApp1.pdb
